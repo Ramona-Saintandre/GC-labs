@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9fafc;
+    box-sizing: border-box;
+}
+
+/* Need to figure out how to align NB better */
+nav {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    /* margin-left:60px; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    color: #69696a;
+    width: 85%;
+}
+
+.lorem {
+    padding: .5em 0em 1.2rem 1em;
+    margin-right: 90px;
+    align-content: center;
+    justify-content: center;
+    border-left: 5px solid #69696a;
+    border-left-width: thick;
+}
+
+/* .pline {   
+    border-left: 5px solid #69696a;  
+    border-left-width:thick; 
+      
+    
+} */
+
+ul {
+    list-style-type: none;
+    font-size: 10px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    word-spacing: 5px;
+    text-decoration: none;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: left;
+    padding-left: 0px;
+    font-size: 1rem;
+    padding: 2px;
+}
+
+h2 {
+    font-size: 25px;
+    margin-top: 10px;
+    color: black;
+    padding-top: .8rem;
+    margin-bottom: 20PX;
+}
+
+a {
+    text-decoration: none;
+    color: #69696a;
+}
+
+a:hover {
+    color: #6b6b83;
+}
+
+button {
+    background-color: #000;
+    color: #fff;
+    /* width: auto; */
+    padding: .5rem;
+    font-size: .7rem;
+    border-radius: 15px;
+    border:none;
+  
+}
+.scrollbtn {
+    margin-top: 2rem;
+}
+.hireUs{
+    margin-bottom: 2rem;
+}
+button:hover {
+    color: #6b6b83;
+}
+/* Media Query */
+
+@media screen and (min-width: 768px) {
+    header {
+        /* need to move more to the right next to the button */
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        padding-bottom: 15px;
+
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        padding-top: 1.5rem;
+        left: 60%;
+        top: 0%;
+        align-items: flex-end;
+    }
+
+    p {
+        font-size: 18px;
+        width: 50%;
+
+    }
+
+    /* need this in the right hand corner */
+    .hireUs {
+        position: absolute;
+        left: 85%;
+        top: 1.5rem;
+
+    }
+
+    /* Need this at the bottom */
+    /* buttons seem to small */
+    .scrollbtn {
+        position: absolute;
+        top: 80%;
+        left: 45%;
+    }
+
+    .circlelarge {
+        background-color: rgba(247, 136, 167, 0.6);
+        height: 150px;
+        width: 150px;
+        border-radius: 150px;
+        position: absolute;
+        bottom: 26em;
+        left: 52em;
+    }
+    .circlemedium {
+        background-color: rgba(247, 193, 162, 0.7);
+        height: 130px;
+        width: 130px;
+        border-radius: 130px;
+        position: absolute;
+        bottom:20em;
+        left: 55em;
+        
+    }
+    .circlesmall {
+        background-color: rgba(207, 130, 213, 0.6);
+        height: 110px;
+        width: 110px;
+        border-radius: 110px;
+        position: absolute;
+        bottom: 24em;
+        left: 58em;
+    }
+
+   
+
+  
+}
+    /* large screen */
+    /* @media screen and (min-width: 1200px){
+  
+    .circlesmall {
+        background-color: rgba(207, 130, 213, 0.6);
+        height: 100px;
+        width: 100px;
+        border-radius: 100px;
+        position: absolute;
+        bottom: 66%;
+        left: 81%;
+    }
+    .circlemedium {
+        background-color: rgba(247, 193, 162, 0.7);
+        height: 150px;
+        width: 150px;
+        border-radius: 150px;
+        position: absolute;
+        bottom: 52%;
+        left: 80%;
+    }
+    .circlelarge {
+        background-color: rgba(247, 136, 167, 0.6);
+        height: 170px;
+        width: 170px;
+        border-radius: 170px;
+        position: absolute;
+        bottom: 60%;
+        left: 72%;
+    }
+}   */
