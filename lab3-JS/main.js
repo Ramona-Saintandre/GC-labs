@@ -9,12 +9,19 @@ let lifeEvents= [
     "I was born in Fulda, Germany.Fulda",
     "I've been married for 15 years.",
     "I have 8 grandkids.",
-    "I currently work at Vaneerden Food Service."
+    "This year I am celebrating 10 years of citizenship."
 ];
 
-// If/Else statements (name, birthday, age)
+// If/Else statements name, birthday, age
 
-if gcGR {
-    
+if (gcGR) {
+   console.log( `My name is ${name} and I am a student at Grand Circus in Grand Rapids, Mi. 
+I just turned ${age} on ${birthdate} !`
+);
+}else{
+    console.log(
+    `My name is ${name} and I am a student at Grand Circus in Detroit, Mi.
+    I just turned ${age} on ${birthdate}! `);
+   
 }
 
