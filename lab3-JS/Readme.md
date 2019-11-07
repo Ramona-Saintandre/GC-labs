@@ -1,7 +1,6 @@
 ## Ramona Saintandre  
 ## JAVASCRIPT LAB 1 - VARIABLES, CONDITIONS & LOOPS
 
-
 **Task:**
  This lab focuses on declaring and initializing variables, conditional statements, template
 literals, and constructing loops.    
