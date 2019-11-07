@@ -1,3 +1,4 @@
+## Ramona Saintandre  
 ## JAVASCRIPT LAB 1 - VARIABLES, CONDITIONS & LOOPS
 
 
