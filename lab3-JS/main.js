@@ -28,11 +28,15 @@ I just turned ${age} on ${birthdate} !`
 // Write a for loop that starts at 0, iterates by increments of 1 while i is less than the length of lifeEvents
 
 for (i=0; i <lifeEvents.length; i++);
- console.log(lifeEvents[]);
+ console.log(lifeEvents[i]);
 
 
 // Declare a variable named randomNumber that is initialized to a random interger
 // Write a while loop that loops while true
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 
+
+let randomNumber =0;{
+
+}
 
