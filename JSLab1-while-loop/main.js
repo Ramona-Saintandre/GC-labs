@@ -14,3 +14,14 @@
   *//**
    */
  let playGame = prompt(`"Hello, ${userName} would you like to play a game?`);
+ /**
+  * @if player says yes game starts
+  * @else player is prompted with a message 		string	playGame  find out if the want to play
+  *//**
+   */
+ if (playGame () == "yes"){
+     prompt(`Great, ${userName}, Let the games begin`) ;
+    }else{
+        prompt("Goodbye, CHICKEN!!!!")
+    };
+    

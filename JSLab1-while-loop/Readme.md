@@ -44,3 +44,5 @@ _____________________
 [JavaScript DocBlock standard](https://devdocs.magento.com/guides/v2.3/coding-standards/docblock-standard-javascript.html)
 [JSDoc](https://jsdoc.app/)
 [JavaScript Tutorial For Beginners #16 - While Loops](https://www.youtube.com/watch?v=PpbFyLTtpWI)
+[Prompt Box](https://www.w3schools.com/js/js_popup.asp)  
+[Template literals (Template strings)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)  
