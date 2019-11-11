@@ -29,3 +29,10 @@ game.
 2. The application logs the progress of the fight after each iteration of the loop.      
 3. Hint: Save asking the user if they want to play for the last part of the code you write.   
 This way you won’t have to type “yes” every time you test your program.  
+
+## Resources  
+_____________________
+[Doc Block](https://typedoc.org/guides/doccomments/)  
+[Master the art of looping in JavaScript with these incredible tricks](https://www.freecodecamp.org/news/master-the-art-of-looping-in-javascript-with-these-incredible-tricks-a5da1aa1d6c5/?fbclid=IwAR03-B8tY9s6wIE0hzrnVDPnNxMMdY7BYQFkrwfvrLhU9dYyVHePARDjjkw)  
+[While Looping](https://medium.com/@iroflo41/while-looping-c2dde81abee7)  
+[Basic While Loops in JavaScript](https://medium.com/@lorisabbinante/basic-while-loops-in-javascript-cae89ce857a5)
