@@ -29,14 +29,31 @@
    
 
     /**
-     * @let player1	integer	player1 starts with 40 points
+     * @let player1Health	number	player1 starts with 40 points
      */
-    player1 = 40;
+    player1Health = 40;
     /**
-     * @let	playergrant	number starts with 10 points 
+     * @let	playergrantHealth	number starts with 10 points 
      */
-    playerGrant =10;
+    playerGrantHealth =10;
     /**
-     * @let		number	player1wins when playerGrant reaches 0 three times
+     * @let	player1wins 	number	player1wins when playerGrant reaches 0 three times
      */
         player1wins = 0;
+
+        /**
+         * Start of game with a while loop 
+         * @let	object	player1Health playerGrantHealth health/damage meter
+         * 
+         */
+        while(player1Health >0 === playerGrantHealth>0){
+
+            /**
+             * @console.log score with health that is left 		
+             */
+            console.log(`${userName} has ${playerHealth} left`);
+            console.log(`Grant has ${playerGrantHealth} left`);
+        };
+
+        
+
