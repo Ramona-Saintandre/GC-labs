@@ -49,6 +49,7 @@
          * not sure if I am using the right operator
          * https://www.w3schools.com/js/js_comparisons.asp
          * ===	equal value and equal type	x === 5	true
+         * &&	and	(x < 10 && y > 1) is true
          */
         while(player1Health >0 === playerGrantHealth> 0){
 
