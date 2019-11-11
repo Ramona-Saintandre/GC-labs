@@ -90,7 +90,9 @@
          * So I need to configure this so that he loose a random point, and Player1 will get that point
          * Grant's game resets when he reaches 0, after the third time Player1 is declared the winner
          */
-        let damageGrant =   healthDamage - 
+        //  let damageGrant =   healthDamage - I am totally lost. I can not figure out how to bring this all together 
+        // This is how far I was able to get
+        // Sorry
 
 
 
