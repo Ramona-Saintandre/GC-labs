@@ -23,8 +23,8 @@
    */
  if (playGame = "yes"){
      alert(`Great, ${userName} Let the games begin`) ;
-    }else{
-        alert("Goodbye, CHICKEN!!!!");
+    // }else{
+    //     alert("Goodbye, CHICKEN!!!!");
     };
 
    
@@ -51,7 +51,7 @@
          * ===	equal value and equal type	x === 5	true
          * &&	and	(x < 10 && y > 1) is true
          */
-        while(player1Health >0 === playerGrantHealth> 0){
+        while(player1Health >0 && playerGrantHealth> 0){
 
             /**
              * @console.log score with health that is left 		
