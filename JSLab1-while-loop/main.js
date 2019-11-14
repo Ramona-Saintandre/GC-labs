@@ -1,7 +1,8 @@
 /**
  * Ramona Saintandre 
  * November 10th, 2019
- * GC - JSLab1 - while loop game   
+ * GC - JSLab2 - functions
+ *    
  */
 
  /**
