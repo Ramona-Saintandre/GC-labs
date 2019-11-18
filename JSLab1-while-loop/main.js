@@ -85,7 +85,7 @@
          * @let		mixed	damagePlayer1 
          * Player1 does not reset, and wins the game after Grant has reset 3 times 
          */
-        let damagePlayer1 = healthDamage - damageGrant;
+        
         /**
          * @let	mixed	damageGrant Grant looses when he reaches 0 three times 
          * So I need to configure this so that he loose a random point, and Player1 will get that point
