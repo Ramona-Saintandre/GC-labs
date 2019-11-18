@@ -76,8 +76,8 @@
          * Ceil for player1 since they will get a point?
          * mulitplying by two because there are two numbers
          */
-        player1Health = (Math.ceil (Math.random()*2));
-        playerGrantHealth = (Math.floor (Math.random()*2));
+        player1Health = (Math.ceil -(Math.random()*2));
+        playerGrantHealth = (Math.floor -(Math.random()*2));
 
         
 
