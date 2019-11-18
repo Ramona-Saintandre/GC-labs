@@ -95,6 +95,15 @@
         // This is how far I was able to get
         // Sorry
 
+if (playerGrantHealth <= 0);{
+  player1wins ++;
+  playerGrantHealth = 10;//reseting Grant
+};
 
+if (player1wins = 3){
+  console.log('Player1 is totally awesome!!!')
+}else{
+  console.log('Grant has kicked some butt');
+};
 
 
