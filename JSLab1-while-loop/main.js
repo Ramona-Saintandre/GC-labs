@@ -77,7 +77,7 @@
          * mulitplying by two because there are two numbers
          */
         player1Health = (Math.ceil -(Math.random()*2));
-        playerGrantHealth = (Math.floor -(Math.random()*2));
+        playerGrantHealth = (Math.ceil -(Math.random()*2));
 
         
 
