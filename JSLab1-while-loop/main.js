@@ -30,8 +30,6 @@ if (playGame = "yes") {
  * @let	player1wins 	number	player1wins when playerGrant reaches 0 three times
  */
 
-
-
 /**
  * Start of game with a while loop 
  * @let	object	player1Health playerGrantHealth health/damage meter
