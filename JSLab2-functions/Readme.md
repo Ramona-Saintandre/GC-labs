@@ -22,6 +22,7 @@ random integer between 1 and 10.
   a. Declares and initializes a variable named randNum to either a 0 or 1, randomly.  
 
   b. Returns opt1 if randNum is equal to 0 otherwise return opt2 . **(Use a ternary  operator)**
+  [using the ternary operator in javascript](https://levelup.gitconnected.com/refactor-code-by-using-the-ternary-operator-in-javascript-56ef0817d180) from Level UP
 
 **3.** Declare a function expression named attackPlayer that has one parameter named  
 health which returns a number equal to health minus the product of the  
