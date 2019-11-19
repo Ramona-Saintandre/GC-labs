@@ -3,9 +3,6 @@
  * November 10th, 2019
  * GC - JSLab2 - functions
  **/
-
-let userName = prompt('Hello, What\'s your name');
-
 /**
  * @let		string	userName  find out player1 name
  * @let		string	playGame  find out if the want to play
@@ -13,8 +10,8 @@ let userName = prompt('Hello, What\'s your name');
  * @else player   is prompted with a message 		string	playGame  find out if the want to play
  * good bye alert is not working 
  */
-
-// let playGame = prompt(`"Hello, ${userName} would you like to play a game?`);
+let userName = window.prompt ("Hello, What's your name");
+ let playGame = window.prompt (`"Hello, ${userName} would you like to play a game?`);
 
 if (playGame = "yes") {
   alert(`Great, ${userName} Let the games begin`);
