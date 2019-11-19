@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Ramona Saintandre 
  * November 18th, 2019
