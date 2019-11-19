@@ -64,12 +64,12 @@ which returns a boolean value of true or false based on the following condition:
 
 
 **7.** Declare a function declaration named fight that has four parameters.  
-   Parameters:
+   Parameters:  
   a. player1 - this will hold the name of the first player  
   b. player2 - this will hold the name of the second player  
   c. player1Health - this will hold the health of the first player  
   d. player2Health - this will hold the health of the second player  
-  e. Within the fight function, write    while loop that loops while true  
+  e. Within the fight function, write    while loop that loops while true     
 
 
 
@@ -127,7 +127,7 @@ player1Health as an argument equates to true. If true:
 player1 as arguments.  
  Break  
 
- 
+
 
 
 
