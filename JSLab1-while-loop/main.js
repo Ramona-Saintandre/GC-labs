@@ -4,7 +4,7 @@
  * GC - JSLab2 - functions
  **/
 
-let userName = prompt("Hello, What's your name");
+let userName = prompt('Hello, What\'s your name');
 
 /**
  * @let		string	userName  find out player1 name
@@ -14,7 +14,7 @@ let userName = prompt("Hello, What's your name");
  * good bye alert is not working 
  */
 
-let playGame = prompt(`"Hello, ${userName} would you like to play a game?`);
+// let playGame = prompt(`"Hello, ${userName} would you like to play a game?`);
 
 if (playGame = "yes") {
   alert(`Great, ${userName} Let the games begin`);
