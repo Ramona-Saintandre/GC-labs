@@ -1,26 +1,25 @@
 // app.js is for all declared functions/
 /**
   * @let		string	userName  find out player1 name
-  */
-
- let userName = prompt("Hello, What's your name");
-
- /**
   * @let		string	playGame  find out if the want to play
-  *//**
-   */
- let playGame = prompt(`"Hello, ${userName} would you like to play a game?`);
- /**
   * @if  playGame  player says yes game starts
   * @else player   is prompted with a message 		string	playGame  find out if the want to play
   * good bye alert is not working 
-  *//**
-   */
- if (playGame = "yes"){
-     alert(`Great, ${userName} Let the games begin`) ;
-    // }else{
-    //     alert("Goodbye, CHICKEN!!!!");
-    };
+  */
+ function startGame(){
+  let userName = prompt("Hello, What's your name");
+ 
+  let playGame = prompt(`"Hello, ${userName} would you like to play a game?`);
+  
+  if (playGame = "yes"){
+      alert(`Great, ${userName} Let the games begin`) ;
+    }else{
+      alert("Goodbye, CHICKEN!!!!");
+ };
+ }
+
+
+     
 
    
 
