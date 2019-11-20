@@ -1,3 +1,4 @@
+'use strict'
 /**
  * Ramona Saintandre 
  * November 10th, 2019
@@ -10,12 +11,12 @@
  * @else player   is prompted with a message 		string	playGame  find out if the want to play
  * good bye alert is not working 
  */
-player1Health = 40;
-playerGrantHealth = 10;
-player1wins = 0;
+let player1Health = 40;
+let playerGrantHealth = 10;
+let player1wins = 0;
 
-let userName = prompt ("Hello, What's your name");
-let playGame = prompt (`"Hello, ${userName} would you like to play a game?`);
+let userName = prompt("Hello, What's your name");
+let playGame = prompt(`"Hello, ${userName} would you like to play a game?`);
 
 if (playGame = "yes") {
   alert(`Great, ${userName} Let the games begin`);
@@ -38,10 +39,19 @@ if (playGame = "yes") {
  * ===	equal value and equal type	x === 5	true
  * &&	and	(x < 10 && y > 1) is true
  */
-while (player1Health > 0 === player1wins < 3) {
-  
+
+while (player1Health > 0 && player1wins < 3) {
+
   console.log(`${userName} has ${player1Health} left`);
   console.log(`Grant the Mighty Chicken has ${playerGrantHealth} left`);
+
+  player1Health -= (Math.ceil((Math.random() * 2)));
+  playerGrantHealth -= (Math.ceil((Math.random() * 2)));
+
+  if (playerGrantHealth <= 0) {
+    player1wins++;
+    playerGrantHealth = 10; //reseting Grant
+  };
 };
 
 /**
@@ -60,8 +70,7 @@ let healthDamage = [1, 2];
  * Ceil for player1 since they will get a point?
  * mulitplying by two because there are two numbers
  */
-player1Health = (Math.ceil - (Math.random() * 2));
-playerGrantHealth = (Math.ceil - (Math.random() * 2));
+
 
 /**
  * @let		mixed	damagePlayer1 
@@ -71,10 +80,7 @@ playerGrantHealth = (Math.ceil - (Math.random() * 2));
  * Grant's game resets when he reaches 0, after the third time Player1 is declared the winner
  */
 
-if (playerGrantHealth <= 0); {
-  player1wins++;
-  playerGrantHealth = 10; //reseting Grant
-};// end of while loop
+// end of while loop
 
 //winner declaration
 
