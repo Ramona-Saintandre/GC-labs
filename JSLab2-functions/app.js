@@ -1,3 +1,4 @@
+"use strict"
 // app.js is for all declared functions/
 /**
   * @let		string	userName  find out player1 name
@@ -5,8 +6,9 @@
   * @if  playGame  player says yes game starts
   * @else player   is prompted with a message 		string	playGame  find out if the want to play
   * good bye alert is not working 
+  * @todo need to make a branch and turn this into ternary 
   */
- function startGame(){
+ function startGame(){//brought over from lab1
   let userName = prompt("Hello, What's your name");
  
   let playGame = prompt(`"Hello, ${userName} would you like to play a game?`);
@@ -14,26 +16,22 @@
   if (playGame = "yes"){
       alert(`Great, ${userName} Let the games begin`) ;
     }else{
-      alert("Goodbye, CHICKEN!!!!");
+      //learned from soloLearn testing it out here
+      confirm("Goodbye, CHICKEN!!!!");
  };
  }
-
-
-     
-
-   
+      
 
     /**
-     * how does the game start ?
-     * @let player1Health	number	player1 starts with 40 points
+     
      */
     player1Health = 40;
     /**
-     * @let	playergrantHealth	number starts with 10 points 
+     
      */
     playerGrantHealth =10;
     /**
-     * @let	player1wins 	number	player1wins when playerGrant reaches 0 three times
+     
      */
         player1wins = 0;
 
