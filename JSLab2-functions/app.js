@@ -23,7 +23,7 @@ function startGame() { //brought over from lab1
  * @param randomDamage declare arrow function with no parameters
  * return interger between 1-10
  */
-randomDamage = () => Math.ceil(Math.random)*10);
+randomDamage = () => Math.ceil(Math.random) * 10);
 
 /**
  * Step 2
@@ -35,8 +35,8 @@ randomDamage = () => Math.ceil(Math.random)*10);
  * Tenary operator takes 3 opperands, tenary opperator is a shortcut for an if statement
  * Tenary operators always recieve 2 conditions for both true and false 
  */
-let chooseOption = (opt1,opt2){
-  let randNum = (Math.ceil(Math.random())*2);
+let chooseOption = (opt1, opt2) {
+  let randNum = (Math.ceil(Math.random()) * 2);
   return randNum === 0 ? opt1 : opt2;
 };
 
@@ -47,56 +47,76 @@ let chooseOption = (opt1,opt2){
  * 
  */
 
- let attackPlayer = function (health){
-   return health -(randomDamage)
- };
+let attackPlayer = function (health) {
+  return health - (randomDamage)
+};
+
+/**
+ * step 4
+ * @param logHealth arrow function with two parameters 
+ * @param player and @health console.log
+ */
+
+let logHealth = (player, health) => {
+  console.log(`${player} health ${health}`);
+};
+
+/**
+ * step 5
+ * @logDeath declare arrow function with two parameters 
+ * @winner and @loser console.log 
+ */
+
+let logDeath = (winner, loser) => {
+  console.log(`${winner} defeated ${loser}`);
+};
+
+/**
+ * Step 6
+ * @isDead declare arrow function with one parameter named @health
+ * return boolean value of true or false @health <=0
+ */
+
+let isDead = (health) => {
+  return health <= 0;
+}
+
+/**
+ * Step 7
+ * declare a function @fight with 4 parameters 
+ * @player1
+ * @player2
+ * @player1Health
+ * @player2Health
+ * within the @fight function, write while loop that loops while true
+ * 
+ */
+
+/**
+ * Step 8
+ *declare and initilize @attacker equal to @chooseOption with 
+ @player1 and @player2 as arguments
+ */
 
  /**
-  * step 4
-  * @param logHealth arrow function with two parameters 
-  * @param player and @health console.log
+  * Step 9
+  * has an if statement  triggered whe @attacker is equal to @player1
+  *  
   */
-
-  let logHealth =(player,health)=>{
-    console.log(`${player} health ${health}`);
-  };
-
-  /**
-   * step 5
-   * @logDeath declare arrow function with two parameters 
-   * @winner and @loser console.log 
-   */
-
-   let logDeath =(winner,loser) => {
-     console.log(`${winner} defeated ${loser}`);
-   };
-
-   /**
-    * Step 6
-    * @isDead declare arrow function with one parameter named @health
-    * return boolean value of true or false @health <=0
+ /**  
+  * Step 10
+  * @param {*} player2Health equal to the prodcut of @attackPlayer with @player2Health
+  * @todo create a branch and turn this into a teranary operation
+  * 
     */
+function fight(player1, player2, player1Health, player2Health) {
+  while (true) {
+    let attacker = chooseOption(player1, player2);
+    if (attacker === player1);
+    player2Health =attackPlayer(player2Health);
 
-   let isDead =(health) => {
-    return health <= 0;
-        }
-
-        /**
-         * Step 7
-         * declare a function @fight with 4 parameters 
-         * @player1
-         * @player2
-         * @player1Health
-         * @player2Health
-         * within the @fight function, write while loop that loops while true
-         * 
-         */
-
-         function fight(player1,player2,player1Health,player2Health){
-           while (true){
-
-           }
-         }
+  }
+}
 
 // player1Health = 40;
 // playerGrantHealth = 10;
