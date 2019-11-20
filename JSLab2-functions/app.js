@@ -224,8 +224,8 @@ while (true) {
 // //  let damageGrant =   healthDamage - I am totally lost. I can not figure out how to bring this all together 
 // // This is how far I was able to get
 // // Sorry
-}
-}
+
+
 let logHealth = (player, health) => {
   console.log(`${player} health ${health}`);
 };
