@@ -42,8 +42,24 @@ let chooseOption = (opt1,opt2){
 
 /**
  * Step 3
+ * function expression @attackPlayer 1 parameter
+ * @param health return randomDamage
  * 
  */
+
+ let attackPlayer = function (health){
+   return health -(randomDamage)
+ };
+
+ /**
+  * step 4
+  * @param logHealth arrow funtion with two parameters 
+  * @param player and @health console.log
+  */
+
+  let logHealth =(player,health)=>{
+    console.log(`${player}` health ${health});
+  }
 player1Health = 40;
 playerGrantHealth = 10;
 player1wins = 0;
