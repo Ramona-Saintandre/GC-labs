@@ -23,7 +23,7 @@ function startGame() { //brought over from lab1
  * @param randomDamage declare arrow function with no parameters
  * return interger between 1-10
  */
-randomDamage = () => Math.ceil(Math.random) * 10);
+randomDamage = () => (Math.ceil(Math.random) * 10);
 
 /**
  * Step 2
