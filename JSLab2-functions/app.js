@@ -15,7 +15,7 @@ function startGame() { //brought over from lab1
     alert(`Great, ${userName} Let the games begin`);
   } else {
     //learned from soloLearn testing it out here
-    confirm("Goodbye, CHICKEN!!!!");
+    alert("Goodbye, CHICKEN!!!!");
   };
 }
 /**
