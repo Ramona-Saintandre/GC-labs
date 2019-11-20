@@ -81,6 +81,22 @@ let chooseOption = (opt1,opt2){
     return health <= 0;
         }
 
+        /**
+         * Step 7
+         * declare a function @fight with 4 parameters 
+         * @player1
+         * @player2
+         * @player1Health
+         * @player2Health
+         * within the @fight function, write while loop that loops while true
+         * 
+         */
+
+         function fight(player1,player2,player1Health,player2Health){
+           while (true){
+
+           }
+         }
 
 // player1Health = 40;
 // playerGrantHealth = 10;
