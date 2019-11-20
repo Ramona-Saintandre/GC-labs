@@ -164,6 +164,12 @@ function fight(player1, player2, player1Health, player2Health) {
   }
 }
 
+/**
+ * Step 16
+ * call @fight with four parameters of my choosing .  With names and starting health
+ */
+
+ fight("Ramona","David",500,300);
 
 
 // player1Health = 40;
