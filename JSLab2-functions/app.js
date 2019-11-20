@@ -57,9 +57,7 @@ let attackPlayer = function (health) {
  * @param player and @health console.log
  */
 
-let logHealth = (player, health) => {
-  console.log(`${player} health ${health}`);
-};
+
 
 /**
  * step 5
@@ -67,9 +65,6 @@ let logHealth = (player, health) => {
  * @winner and @loser console.log 
  */
 
-let logDeath = (winner, loser) => {
-  console.log(`${winner} defeated ${loser}`);
-};
 
 /**
  * Step 6
@@ -229,3 +224,10 @@ function fight(player1, player2, player1Health, player2Health)
 // // This is how far I was able to get
 // // Sorry
 }}
+let logHealth = (player, health) => {
+  console.log(`${player} health ${health}`);
+};
+
+let logDeath = (winner, loser) => {
+  console.log(`${winner} defeated ${loser}`);
+};
