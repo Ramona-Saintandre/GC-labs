@@ -35,7 +35,7 @@ randomDamage = () => (Math.ceil(Math.random) * 10);
  * Tenary operator takes 3 opperands, tenary opperator is a shortcut for an if statement
  * Tenary operators always recieve 2 conditions for both true and false 
  */
-let chooseOption = (opt1, opt2) =>{
+let chooseOption = (opt1, opt2) => {
   let randNum = (Math.ceil(Math.random()) * 2);
   return randNum === 0 ? opt1 : opt2;
 };
@@ -93,47 +93,47 @@ let isDead = (health) => {
  @player1 and @player2 as arguments
  */
 
- /**
-  * Step 9
-  * has an if statement  triggered whe @attacker is equal to @player1
-  *  
-  */
+/**
+ * Step 9
+ * has an if statement  triggered whe @attacker is equal to @player1
+ *  
+ */
 
- /**  
-  * Step 10
-  * @param {*} player2Health equal to the prodcut of @attackPlayer with @player2Health
-  * @todo create a branch and turn this into a teranary operation
-  * 
-    */
+/**  
+ * Step 10
+ * @param {*} player2Health equal to the prodcut of @attackPlayer with @player2Health
+ * @todo create a branch and turn this into a teranary operation
+ * 
+ */
 
-    /**
-     * Step 11
-     * call @logHealth with 
-     * @param  player2   @param  player2Health as arguments  
-     * @todo ask Chris if this should be a teranary operation   
-     */
+/**
+ * Step 11
+ * call @logHealth with 
+ * @param  player2   @param  player2Health as arguments  
+ * @todo ask Chris if this should be a teranary operation   
+ */
 
-     /**
-      * Step 12
-      * if statement @isDead with 
-      * @param player2Health as an argument equates to true , 
-      */
+/**
+ * Step 12
+ * if statement @isDead with 
+ * @param player2Health as an argument equates to true , 
+ */
 
-      /**
-       * Step 13
-       * @logDeath call function with 
-       * @player1 and @player2 as arguments 
-       */
+/**
+ * Step 13
+ * @logDeath call function with 
+ * @player1 and @player2 as arguments 
+ */
 
-function fight(player1, player2, player1Health, player2Health) 
-  while (true) {
-    let attacker = chooseOption(player1, player2);
-    if (attacker === player1);
-    player2Health = attackPlayer(player2Health);{
-    logHealth(player2,player2Health);
-    if(isDead(player2Health)){
-    logDeath(player1,player2);
-    break;//not sure if this is the right place for the break ?
+function fight(player1, player2, player1Health, player2Health)
+while (true) {
+  let attacker = chooseOption(player1, player2);
+  if (attacker === player1);
+  player2Health = attackPlayer(player2Health); {
+    logHealth(player2, player2Health);
+    if (isDead(player2Health)) {
+      logDeath(player1, player2);
+      break; //not sure if this is the right place for the break ?
     }
 
     /**
@@ -143,28 +143,29 @@ function fight(player1, player2, player1Health, player2Health)
      * call the @logHealth with @player1 and @player1Health as its arguments
      * 
      */
-
-  else{
-    player1Health = attackPlayer(player1Health);
-    logHealth(player1, player1Health);
-    /**
-     * Step 15
-     * create an if statement that runs if the product @isDead with @player1Health as an argument
-     *  call the @logDeath function with @player2 and @player1 as arguments
-     * 
-     */
-    if(isDead(player1Health)){
-      logDeath(player2, player1);
-      break;//not sure if this is the right place for the break ?
+    else {
+      player1Health = attackPlayer(player1Health);
+      logHealth(player1, player1Health);
+      /**
+       * Step 15
+       * create an if statement that runs if the product @isDead with @player1Health as an argument
+       *  call the @logDeath function with @player2 and @player1 as arguments
+       * 
+       */
+      if (isDead(player1Health)) {
+        logDeath(player2, player1);
+        break; //not sure if this is the right place for the break ?
+      }
+    }
   }
 }
+
 
 /**
  * Step 16
  * call @fight with four parameters of my choosing .  With names and starting health
  */
 
- fight("Ramona","David",500,300);
 
 
 // player1Health = 40;
@@ -223,7 +224,8 @@ function fight(player1, player2, player1Health, player2Health)
 // //  let damageGrant =   healthDamage - I am totally lost. I can not figure out how to bring this all together 
 // // This is how far I was able to get
 // // Sorry
-}}
+}
+}
 let logHealth = (player, health) => {
   console.log(`${player} health ${health}`);
 };
