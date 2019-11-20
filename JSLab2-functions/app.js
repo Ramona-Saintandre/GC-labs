@@ -140,20 +140,31 @@ function fight(player1, player2, player1Health, player2Health) {
     logDeath(player1,player2);
     break;//not sure if this is the right place for the break ?
     }
+
     /**
      * Step 14
      * Create an else statement that runs @isDead and sets  
      * @player1 equal to the @attackPlayer function with @player1Health as its argument
      * call the @logHealth with @player1 and @player1Health as its arguments
-     * call the @logDeath function with @player2 and @player1 as arguments 
+     * 
      */
-
 
   }else{
     player1Health = attackPlayer(player1Health);
     logHealth(player1,player1Health);
+    /**
+     * Step 15
+     * create an if statement that runs if the product @isDead with @player1Health as an argument
+     *  call the @logDeath function with @player2 and @player1 as arguments
+     * 
+     */
+    if(isDead(player2Health)){
+      logDeath(player2,player1);
+      break;//not sure if this is the right place for the break ?
   }
 }
+
+
 
 // player1Health = 40;
 // playerGrantHealth = 10;
