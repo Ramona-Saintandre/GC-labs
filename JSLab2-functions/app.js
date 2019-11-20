@@ -53,66 +53,80 @@ let chooseOption = (opt1,opt2){
 
  /**
   * step 4
-  * @param logHealth arrow funtion with two parameters 
+  * @param logHealth arrow function with two parameters 
   * @param player and @health console.log
   */
 
   let logHealth =(player,health)=>{
-    console.log(`${player}` health ${health});
-  }
-player1Health = 40;
-playerGrantHealth = 10;
-player1wins = 0;
-
-
-
-/**
- * Start of game with a while loop 
- * @let	object	player1Health playerGrantHealth health/damage meter
- * not sure if I am using the right operator
- * https://www.w3schools.com/js/js_comparisons.asp
- * ===	equal value and equal type	x === 5	true
- * &&	and	(x < 10 && y > 1) is true
- */
-while (player1Health > 0 && playerGrantHealth > 0) {
+    console.log(`${player} health ${health}`);
+  };
 
   /**
-   * @console.log score with health that is left 		
+   * step 5
+   * @logDeath declare arrow function with two parameters 
+   * @winner and @loser console.log 
    */
-  console.log(`${userName} has ${player1Health} left`);
-  console.log(`Grant the Mighty Chicken has ${playerGrantHealth} left`);
-};
 
-/**
- * @let		array	healthDamage
- * loop will remove random number either 1 or 2 from health for damage 
- */
-let healthDamage = [1, 2];
+   let logDeath =(winner,loser) => {
+     console.log(`${winner} defeated ${loser}`);
+   };
 
-/**
- * @var	player1Health	mixed	
- * https://www.w3schools.com/jsref/jsref_ceil.asp 
- * https://www.w3schools.com/jsref/jsref_floor.asp 
- * not sure if I should use ceil or floor , from reading the article I think I need floor for grant
- * because I am rounding down 
- * Ceil for player1 since they will get a point?
- * mulitplying by two because there are two numbers
- */
-player1Health = (Math.ceil(Math.random() * 2));
-playerGrantHealth = (Math.floor(Math.random() * 2));
+  
+
+
+// player1Health = 40;
+// playerGrantHealth = 10;
+// player1wins = 0;
 
 
 
-/**
- * @let		mixed	damagePlayer1 
- * Player1 does not reset, and wins the game after Grant has reset 3 times 
- */
-let damagePlayer1 = healthDamage - damageGrant;
-/**
- * @let	mixed	damageGrant Grant looses when he reaches 0 three times 
- * So I need to configure this so that he loose a random point, and Player1 will get that point
- * Grant's game resets when he reaches 0, after the third time Player1 is declared the winner
- */
-//  let damageGrant =   healthDamage - I am totally lost. I can not figure out how to bring this all together 
-// This is how far I was able to get
-// Sorry
+// /**
+//  * Start of game with a while loop 
+//  * @let	object	player1Health playerGrantHealth health/damage meter
+//  * not sure if I am using the right operator
+//  * https://www.w3schools.com/js/js_comparisons.asp
+//  * ===	equal value and equal type	x === 5	true
+//  * &&	and	(x < 10 && y > 1) is true
+//  */
+// while (player1Health > 0 && playerGrantHealth > 0) {
+
+//   /**
+//    * @console.log score with health that is left 		
+//    */
+//   console.log(`${userName} has ${player1Health} left`);
+//   console.log(`Grant the Mighty Chicken has ${playerGrantHealth} left`);
+// };
+
+// /**
+//  * @let		array	healthDamage
+//  * loop will remove random number either 1 or 2 from health for damage 
+//  */
+// let healthDamage = [1, 2];
+
+// /**
+//  * @var	player1Health	mixed	
+//  * https://www.w3schools.com/jsref/jsref_ceil.asp 
+//  * https://www.w3schools.com/jsref/jsref_floor.asp 
+//  * not sure if I should use ceil or floor , from reading the article I think I need floor for grant
+//  * because I am rounding down 
+//  * Ceil for player1 since they will get a point?
+//  * mulitplying by two because there are two numbers
+//  */
+// player1Health = (Math.ceil(Math.random() * 2));
+// playerGrantHealth = (Math.floor(Math.random() * 2));
+
+
+
+// /**
+//  * @let		mixed	damagePlayer1 
+//  * Player1 does not reset, and wins the game after Grant has reset 3 times 
+//  */
+// let damagePlayer1 = healthDamage - damageGrant;
+// /**
+//  * @let	mixed	damageGrant Grant looses when he reaches 0 three times 
+//  * So I need to configure this so that he loose a random point, and Player1 will get that point
+//  * Grant's game resets when he reaches 0, after the third time Player1 is declared the winner
+//  */
+// //  let damageGrant =   healthDamage - I am totally lost. I can not figure out how to bring this all together 
+// // This is how far I was able to get
+// // Sorry
