@@ -48,7 +48,7 @@ let chooseOption = (opt1, opt2) => {
  */
 
 let attackPlayer = function (health) {
-  return health - (randomDamage)
+  return health - randomDamage();
 };
 
 /**
