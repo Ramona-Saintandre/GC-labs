@@ -19,27 +19,36 @@ function startGame() { //brought over from lab1
   };
 }
 /**
+ * Step 1 
  * @param randomDamage declare arrow function with no parameters
  * return interger between 1-10
  */
 randomDamage = () => Math.ceil(Math.random)*10);
+
 /**
+ * Step 2
  * @param chooseOption declare arrow funtion with 2 parameters
  * with 2 parameters opt1, opt2
+ * @randNum declare initialize variaable to either 0 or 1 randomly 
+ * return opt1 if @randNum to 0 otherwise return opt2
+ * @todo Use ternary operator
+ * Tenary operator takes 3 opperands, tenary opperator is a shortcut for an if statement
+ * Tenary operators always recieve 2 conditions for both true and false 
  */
 let chooseOption = (opt1,opt2){
-  let randNum = (Math.ceil(Math.random)*2);
+  let randNum = (Math.ceil(Math.random())*2);
+  return randNum === 0 ? opt1 : opt2;
 };
 
+/**
+ * Step 3
+ * 
+ */
 player1Health = 40;
-/**
- 
- */
 playerGrantHealth = 10;
-/**
- 
- */
 player1wins = 0;
+
+
 
 /**
  * Start of game with a while loop 
