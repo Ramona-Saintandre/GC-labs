@@ -124,6 +124,11 @@ let isDead = (health) => {
       * @param player2Health as an argument equates to true , 
       */
 
+      /**
+       * Step 13
+       * @logDeath call function with 
+       * @player1 and @player2 as arguments 
+       */
 
 function fight(player1, player2, player1Health, player2Health) {
   while (true) {
@@ -132,8 +137,21 @@ function fight(player1, player2, player1Health, player2Health) {
     player2Health = attackPlayer(player2Health);
     logHealth(player2,player2Health);
     if(isDead(player2Health)){
-    
+    logDeath(player1,player2);
+    break;//not sure if this is the right place for the break ?
     }
+    /**
+     * Step 14
+     * Create an else statement that runs @isDead and sets  
+     * @player1 equal to the @attackPlayer function with @player1Health as its argument
+     * call the @logHealth with @player1 and @player1Health as its arguments
+     * call the @logDeath function with @player2 and @player1 as arguments 
+     */
+
+
+  }else{
+    player1Health = attackPlayer(player1Health);
+    logHealth(player1,player1Health);
   }
 }
 
