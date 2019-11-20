@@ -103,18 +103,37 @@ let isDead = (health) => {
   * has an if statement  triggered whe @attacker is equal to @player1
   *  
   */
+
  /**  
   * Step 10
   * @param {*} player2Health equal to the prodcut of @attackPlayer with @player2Health
   * @todo create a branch and turn this into a teranary operation
   * 
     */
+
+    /**
+     * Step 11
+     * call @logHealth with 
+     * @param  player2   @param  player2Health as arguments  
+     * @todo ask Chris if this should be a teranary operation   
+     */
+
+     /**
+      * Step 12
+      * if statement @isDead with 
+      * @param player2Health as an argument equates to true , 
+      */
+
+
 function fight(player1, player2, player1Health, player2Health) {
   while (true) {
     let attacker = chooseOption(player1, player2);
     if (attacker === player1);
-    player2Health =attackPlayer(player2Health);
-
+    player2Health = attackPlayer(player2Health);
+    logHealth(player2,player2Health);
+    if(isDead(player2Health)){
+    
+    }
   }
 }
 
