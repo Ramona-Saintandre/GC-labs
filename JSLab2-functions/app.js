@@ -35,7 +35,7 @@ randomDamage = () => (Math.ceil(Math.random) * 10);
  * Tenary operator takes 3 opperands, tenary opperator is a shortcut for an if statement
  * Tenary operators always recieve 2 conditions for both true and false 
  */
-let chooseOption = (opt1, opt2) {
+let chooseOption = (opt1, opt2) =>{
   let randNum = (Math.ceil(Math.random()) * 2);
   return randNum === 0 ? opt1 : opt2;
 };
