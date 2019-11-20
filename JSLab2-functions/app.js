@@ -228,3 +228,4 @@ function fight(player1, player2, player1Health, player2Health) {
 // //  let damageGrant =   healthDamage - I am totally lost. I can not figure out how to bring this all together 
 // // This is how far I was able to get
 // // Sorry
+}
