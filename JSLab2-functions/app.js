@@ -151,15 +151,15 @@ function fight(player1, player2, player1Health, player2Health) {
 
   }else{
     player1Health = attackPlayer(player1Health);
-    logHealth(player1,player1Health);
+    logHealth(player1, player1Health);
     /**
      * Step 15
      * create an if statement that runs if the product @isDead with @player1Health as an argument
      *  call the @logDeath function with @player2 and @player1 as arguments
      * 
      */
-    if(isDead(player2Health)){
-      logDeath(player2,player1);
+    if(isDead(player1Health)){
+      logDeath(player2, player1);
       break;//not sure if this is the right place for the break ?
   }
 }
