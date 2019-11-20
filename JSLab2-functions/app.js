@@ -130,11 +130,11 @@ let isDead = (health) => {
        * @player1 and @player2 as arguments 
        */
 
-function fight(player1, player2, player1Health, player2Health) {
+function fight(player1, player2, player1Health, player2Health) 
   while (true) {
     let attacker = chooseOption(player1, player2);
     if (attacker === player1);
-    player2Health = attackPlayer(player2Health);
+    player2Health = attackPlayer(player2Health);{
     logHealth(player2,player2Health);
     if(isDead(player2Health)){
     logDeath(player1,player2);
@@ -149,7 +149,7 @@ function fight(player1, player2, player1Health, player2Health) {
      * 
      */
 
-  }else{
+  else{
     player1Health = attackPlayer(player1Health);
     logHealth(player1, player1Health);
     /**
@@ -228,4 +228,4 @@ function fight(player1, player2, player1Health, player2Health) {
 // //  let damageGrant =   healthDamage - I am totally lost. I can not figure out how to bring this all together 
 // // This is how far I was able to get
 // // Sorry
-}
+}}
