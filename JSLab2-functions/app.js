@@ -71,7 +71,15 @@ let chooseOption = (opt1,opt2){
      console.log(`${winner} defeated ${loser}`);
    };
 
-  
+   /**
+    * Step 6
+    * @isDead declare arrow function with one parameter named @health
+    * return boolean value of true or false @health <=0
+    */
+
+   let isDead =(health) => {
+    return health <= 0;
+        }
 
 
 // player1Health = 40;
