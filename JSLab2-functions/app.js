@@ -27,7 +27,7 @@ randomDamage = () => Math.ceil(Math.random)*10);
  * @param chooseOption declare arrow funtion with 2 parameters
  * with 2 parameters opt1, opt2
  */
-let chooseOption(opt1,opt2){
+let chooseOption = (opt1,opt2){
   let randNum = (Math.ceil(Math.random)*2);
 };
 
