@@ -12,7 +12,7 @@ function startGame() { //brought over from lab1
   let userName = prompt("Hello, What's your name");
   let playGame = prompt(`"Hello, ${userName} would you like to play a game?`);
   if (playGame = "yes") {
-    alert(`Great, ${userName} Let the games begin`);
+    prompt(`Great, ${userName} Let the games begin`);
   } else {
     //learned from soloLearn testing it out here
     alert("Goodbye, CHICKEN!!!!");
@@ -23,7 +23,7 @@ function startGame() { //brought over from lab1
  * @param randomDamage declare arrow function with no parameters
  * return interger between 1-10
  */
-randomDamage = () => (Math.ceil(Math.random) * 10);
+randomDamage = () => (Math.ceil(Math.random) * 10 + 1);
 
 /**
  * Step 2
@@ -125,7 +125,7 @@ let isDead = (health) => {
  * @player1 and @player2 as arguments 
  */
 
-function fight(player1, player2, player1Health, player2Health)
+function fight(player1, player2, player1Health, player2Health);
 while (true) {
   let attacker = chooseOption(player1, player2);
   if (attacker === player1);
