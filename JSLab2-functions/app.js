@@ -8,16 +8,16 @@
  * good bye alert is not working 
  * @todo need to make a branch and turn this into ternary 
  */
-function startGame() { //brought over from lab1
-  let userName = prompt("Hello, What's your name");
-  let playGame = prompt(`"Hello, ${userName} would you like to play a game?`);
-  if (playGame = "yes") {
-    prompt(`Great, ${userName} Let the games begin`);
-  } else {
-    //learned from soloLearn testing it out here
-    alert("Goodbye, CHICKEN!!!!");
-  };
-}
+// function startGame() { //brought over from lab1
+//   let userName = prompt("Hello, What's your name");
+//   let playGame = prompt(`"Hello, ${userName} would you like to play a game?`);
+//   if (playGame = "yes") {
+//     prompt(`Great, ${userName} Let the games begin`);
+//   } else {
+//     //learned from soloLearn testing it out here
+//     alert("Goodbye, CHICKEN!!!!");
+//   };
+// };
 /**
  * Step 1 
  * @param randomDamage declare arrow function with no parameters
@@ -125,7 +125,9 @@ let isDead = (health) => {
  * @player1 and @player2 as arguments 
  */
 
-function fight(player1, player2, player1Health, player2Health);
+function fight(player1, player2, player1Health, player2Health){
+
+
 while (true) {
   let attacker = chooseOption(player1, player2);
   if (attacker === player1);
@@ -135,6 +137,7 @@ while (true) {
       logDeath(player1, player2);
       break; //not sure if this is the right place for the break ?
     }
+  
 
     /**
      * Step 14
@@ -143,7 +146,8 @@ while (true) {
      * call the @logHealth with @player1 and @player1Health as its arguments
      * 
      */
-    else {
+  
+  } else {
       player1Health = attackPlayer(player1Health);
       logHealth(player1, player1Health);
       /**
