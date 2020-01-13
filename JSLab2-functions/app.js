@@ -8,22 +8,22 @@
  * good bye alert is not working 
  * @todo need to make a branch and turn this into ternary 
  */
-function startGame() { //brought over from lab1
-  let userName = prompt("Hello, What's your name");
-  let playGame = prompt(`"Hello, ${userName} would you like to play a game?`);
-  if (playGame = "yes") {
-    alert(`Great, ${userName} Let the games begin`);
-  } else {
-    //learned from soloLearn testing it out here
-    confirm("Goodbye, CHICKEN!!!!");
-  };
-}
+// function startGame() { //brought over from lab1
+//   let userName = prompt("Hello, What's your name");
+//   let playGame = prompt(`"Hello, ${userName} would you like to play a game?`);
+//   if (playGame = "yes") {
+//     prompt(`Great, ${userName} Let the games begin`);
+//   } else {
+//     //learned from soloLearn testing it out here
+//     alert("Goodbye, CHICKEN!!!!");
+//   };
+// };
 /**
  * Step 1 
  * @param randomDamage declare arrow function with no parameters
  * return interger between 1-10
  */
-randomDamage = () => Math.ceil(Math.random) * 10);
+randomDamage = () => (Math.ceil(Math.random) * 10 + 1);
 
 /**
  * Step 2
@@ -35,7 +35,7 @@ randomDamage = () => Math.ceil(Math.random) * 10);
  * Tenary operator takes 3 opperands, tenary opperator is a shortcut for an if statement
  * Tenary operators always recieve 2 conditions for both true and false 
  */
-let chooseOption = (opt1, opt2) {
+let chooseOption = (opt1, opt2) => {
   let randNum = (Math.ceil(Math.random()) * 2);
   return randNum === 0 ? opt1 : opt2;
 };
@@ -48,7 +48,7 @@ let chooseOption = (opt1, opt2) {
  */
 
 let attackPlayer = function (health) {
-  return health - (randomDamage)
+  return health - randomDamage();
 };
 
 /**
@@ -57,9 +57,7 @@ let attackPlayer = function (health) {
  * @param player and @health console.log
  */
 
-let logHealth = (player, health) => {
-  console.log(`${player} health ${health}`);
-};
+
 
 /**
  * step 5
@@ -67,9 +65,6 @@ let logHealth = (player, health) => {
  * @winner and @loser console.log 
  */
 
-let logDeath = (winner, loser) => {
-  console.log(`${winner} defeated ${loser}`);
-};
 
 /**
  * Step 6
@@ -98,48 +93,51 @@ let isDead = (health) => {
  @player1 and @player2 as arguments
  */
 
- /**
-  * Step 9
-  * has an if statement  triggered whe @attacker is equal to @player1
-  *  
-  */
+/**
+ * Step 9
+ * has an if statement  triggered whe @attacker is equal to @player1
+ *  
+ */
 
- /**  
-  * Step 10
-  * @param {*} player2Health equal to the prodcut of @attackPlayer with @player2Health
-  * @todo create a branch and turn this into a teranary operation
-  * 
-    */
+/**  
+ * Step 10
+ * @param {*} player2Health equal to the prodcut of @attackPlayer with @player2Health
+ * @todo create a branch and turn this into a teranary operation
+ * 
+ */
 
-    /**
-     * Step 11
-     * call @logHealth with 
-     * @param  player2   @param  player2Health as arguments  
-     * @todo ask Chris if this should be a teranary operation   
-     */
+/**
+ * Step 11
+ * call @logHealth with 
+ * @param  player2   @param  player2Health as arguments  
+ * @todo ask Chris if this should be a teranary operation   
+ */
 
-     /**
-      * Step 12
-      * if statement @isDead with 
-      * @param player2Health as an argument equates to true , 
-      */
+/**
+ * Step 12
+ * if statement @isDead with 
+ * @param player2Health as an argument equates to true , 
+ */
 
-      /**
-       * Step 13
-       * @logDeath call function with 
-       * @player1 and @player2 as arguments 
-       */
+/**
+ * Step 13
+ * @logDeath call function with 
+ * @player1 and @player2 as arguments 
+ */
 
-function fight(player1, player2, player1Health, player2Health) {
-  while (true) {
-    let attacker = chooseOption(player1, player2);
-    if (attacker === player1);
-    player2Health = attackPlayer(player2Health);
-    logHealth(player2,player2Health);
-    if(isDead(player2Health)){
-    logDeath(player1,player2);
-    break;//not sure if this is the right place for the break ?
+function fight(player1, player2, player1Health, player2Health){
+
+
+while (true) {
+  let attacker = chooseOption(player1, player2);
+  if (attacker === player1);
+  player2Health = attackPlayer(player2Health); {
+    logHealth(player2, player2Health);
+    if (isDead(player2Health)) {
+      logDeath(player1, player2);
+      break; //not sure if this is the right place for the break ?
     }
+  
 
     /**
      * Step 14
@@ -148,28 +146,30 @@ function fight(player1, player2, player1Health, player2Health) {
      * call the @logHealth with @player1 and @player1Health as its arguments
      * 
      */
-
-  }else{
-    player1Health = attackPlayer(player1Health);
-    logHealth(player1, player1Health);
-    /**
-     * Step 15
-     * create an if statement that runs if the product @isDead with @player1Health as an argument
-     *  call the @logDeath function with @player2 and @player1 as arguments
-     * 
-     */
-    if(isDead(player1Health)){
-      logDeath(player2, player1);
-      break;//not sure if this is the right place for the break ?
+  
+  } else {
+      player1Health = attackPlayer(player1Health);
+      logHealth(player1, player1Health);
+      /**
+       * Step 15
+       * create an if statement that runs if the product @isDead with @player1Health as an argument
+       *  call the @logDeath function with @player2 and @player1 as arguments
+       * 
+       */
+      if (isDead(player1Health)) {
+        logDeath(player2, player1);
+        break; //not sure if this is the right place for the break ?
+      }
+    }
   }
 }
+
 
 /**
  * Step 16
  * call @fight with four parameters of my choosing .  With names and starting health
  */
 
- fight("Ramona","David",500,300);
 
 
 // player1Health = 40;
@@ -228,3 +228,12 @@ function fight(player1, player2, player1Health, player2Health) {
 // //  let damageGrant =   healthDamage - I am totally lost. I can not figure out how to bring this all together 
 // // This is how far I was able to get
 // // Sorry
+
+
+let logHealth = (player, health) => {
+  console.log(`${player} health ${health}`);
+};
+
+let logDeath = (winner, loser) => {
+  console.log(`${winner} defeated ${loser}`);
+};

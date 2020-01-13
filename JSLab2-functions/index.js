@@ -6,4 +6,5 @@
  *    
  */
 
- fight ();
+
+fight("Ramona", "David", 500, 300);
