@@ -15,22 +15,42 @@ export class TodosComponent implements OnInit {
     this.todos = [
       {
       id: 1,
-      title:'Todo One',
+      title:'include component called todo',
       completed:false
     },
     {
       id: 2,
-      title:'Todo One',
+      title:'include a tod interface',
       completed:false
     },
     {
       id: 3,
-      title:'Todo One',
+      title:'component must add an array ',
       completed:false
     },
     {
       id: 4,
-      title:'Todo One',
+      title:'ngFor directive must be used ',
+      completed:false
+    },
+    {
+      id: 5,
+      title:'able to add dynamically style tod items (strikethrough',
+      completed:false
+    },
+    {
+      id: 6,
+      title:'ngIf directive must be used to remove button',
+      completed:false
+    },
+    {
+      id: 7,
+      title:'X-buttons, complete-buttons,add-buttons',
+      completed:false
+    },
+    {
+      id: 8,
+      title:'two inputs ',
       completed:false
     }
   ]
