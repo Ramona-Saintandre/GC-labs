@@ -20,7 +20,7 @@ export class TodosComponent implements OnInit {
     },
     {
       id: 2,
-      title:'include a tod interface',
+      title:'include a todo interface',
       completed:false
     },
     {
@@ -35,7 +35,7 @@ export class TodosComponent implements OnInit {
     },
     {
       id: 5,
-      title:'able to add dynamically style tod items (strikethrough',
+      title:'able to add dynamically style todo items (strikethrough',
       completed:false
     },
     {
