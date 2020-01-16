@@ -1,50 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif
 }
-body{    
-    line-height: 1.5;
-    background: #E166DB;
+
+body {
+  line-height: 1.5;
+  background: #E166DB;
   background: -webkit-linear-gradient(left, #E166DB, #EE9639);
   background: -moz-linear-gradient(left, #E166DB, #EE9639);
   background: linear-gradient(to right, #E166DB, #EE9639);
 }
 
-a{
-    color: black;
-    text-decoration: none;
+div {
+  background-color: lightcoral;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 4px;
 }
-.container{
-    padding: 0 1rem;
+
+.box {
+  background-color: white;
+  box-shadow: black;
+  width: 60%;
+  margin: auto;
+  margin-top: 40px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 1rem;
 
 }
-.btn{
-    display: inline-block;
-    border: none;
-    background: #5555;
-    padding: 7px 20px;
-    cursor: pointer;
+
+.btn {
+  display: inline-block;
+  border: none;
+  background: #5555;
+  padding: 7px 20px;
+  cursor: pointer;
 }
-.btn:hover{
-    background: #666;    
+
+.btn:hover {
+  background: #666;
 }
-button{
-    width: 100%;
+
+
+.delete {
+  float: left;
+  border: 2px solid red;
+  border-radius: 5px;
+  height: 20px;
+  color: red;
 }
-.delete{
-    float: left;
-    border: 2px solid red;
-    border-radius: 5px;
-    height: 20px;
-    color: red;
+
+.add {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  color: #ffffff;
+  font-size: 13px;
 }
-.add{    
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-right: 20px;
-        color: #ffffff;
-        font-size: 13px;
-      }  
