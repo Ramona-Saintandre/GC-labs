@@ -16,7 +16,7 @@ export class TodosComponent implements OnInit {
       {
       id: 1,
       title:'include component called todo',
-      completed:true
+      completed:false
     },
     {
       id: 2,
@@ -26,7 +26,7 @@ export class TodosComponent implements OnInit {
     {
       id: 3,
       title:'component must add an array ',
-      completed:true
+      completed:false
     },
     {
       id: 4,
