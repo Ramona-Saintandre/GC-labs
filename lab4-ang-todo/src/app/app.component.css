@@ -18,8 +18,10 @@
   }
   div {
   background-color: lightcoral;
-  box-sizing: border-box;  
-  
+  box-sizing: border-box;    
   box-shadow: black;
   padding: 4px;
+}
+input{
+  width: 100%;
 }
