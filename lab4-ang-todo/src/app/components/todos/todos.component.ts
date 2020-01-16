@@ -16,17 +16,17 @@ export class TodosComponent implements OnInit {
       {
       id: 1,
       title:'include component called todo',
-      completed:false
+      completed:true
     },
     {
       id: 2,
-      title:'include a tod interface',
+      title:'include a todo interface',
       completed:false
     },
     {
       id: 3,
       title:'component must add an array ',
-      completed:false
+      completed:true
     },
     {
       id: 4,
