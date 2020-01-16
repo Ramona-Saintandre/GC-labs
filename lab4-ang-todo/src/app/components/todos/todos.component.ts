@@ -35,7 +35,7 @@ export class TodosComponent implements OnInit {
     },
     {
       id: 5,
-      title:'able to add dynamically style tod items (strikethrough',
+      title:'able to add dynamically style todo items (strikethrough',
       completed:false
     },
     {

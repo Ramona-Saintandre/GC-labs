@@ -15,9 +15,9 @@ export class TodoItemsComponent implements OnInit {
 
 // setting dynamic class
 setClass() {
-  let classes ={
+  let classes = {
     todo: true,
-    'is-completed':this.todo.completed
+    'is-complete':this.todo.completed
   }
   return classes;
 }
