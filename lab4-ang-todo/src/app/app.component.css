@@ -15,3 +15,8 @@
     margin: auto;
     margin-top: 40px;
   }
+  div {
+  background-color: lightcoral;
+  box-sizing: border-box;  
+  padding: 4px;
+}

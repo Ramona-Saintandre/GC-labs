@@ -14,12 +14,12 @@ body {
   background: linear-gradient(to right, #E166DB, #EE9639);
 }
 
-div {
+/* div {
   background-color: lightcoral;
   box-sizing: border-box;
   border-radius: 5px;
   padding: 4px;
-}
+} */
 
 .box {
   background-color: white;
