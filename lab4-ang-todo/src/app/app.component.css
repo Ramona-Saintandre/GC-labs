@@ -8,14 +8,15 @@
     /* border: 2px solid  #ff1493; */
     width: 100%;
   }
-  .hdr {
-    background-color: white;
-    
-     
+
+    hdr{     
     width: 60%;
     margin: auto;
     margin-top: 40px;
+    font-weight: 300;
+    font-family: 'Open Sans',sans-serif;
   }
+
   div {
   background-color: lightcoral;
   box-sizing: border-box;    
