@@ -3,11 +3,16 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif
 }
-body{
-    font-family: Arial, Helvetica, sans-serif;
+body{    
     line-height: 1.5;
+    background: #E166DB;
+  background: -webkit-linear-gradient(left, #E166DB, #EE9639);
+  background: -moz-linear-gradient(left, #E166DB, #EE9639);
+  background: linear-gradient(to right, #E166DB, #EE9639);
 }
+
 a{
     color: black;
     text-decoration: none;
@@ -24,6 +29,8 @@ a{
     cursor: pointer;
 }
 .btn:hover{
-    background: #666;
-    
+    background: #666;    
+}
+button{
+    width: 100%;
 }
