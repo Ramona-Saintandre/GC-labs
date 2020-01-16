@@ -12,15 +12,10 @@ body {
   background: -webkit-linear-gradient(left, #E166DB, #EE9639);
   background: -moz-linear-gradient(left, #E166DB, #EE9639);
   background: linear-gradient(to right, #E166DB, #EE9639);
-  font-weight: 300;
+ 
 }
 
-/* div {
-  background-color: lightcoral;
-  box-sizing: border-box;
-  border-radius: 5px;
-  padding: 4px;
-} */
+
 
 .box {
   background-color: white;
@@ -33,28 +28,26 @@ body {
 a {
   color: black;
   text-decoration: none;
-  font-weight: 300;
+  
 }
 
 .container {
   padding: 0 1rem;
 
 }
-h3{
-  font-weight: bold;
-  font-family: 'Open Sans',Arial, Helvetica, sans-serif;
-}
+
 .btn {
   display: inline-block;
   border: none;
   background: #5555;
   padding: 7px 20px;
   cursor: pointer;
-  font-weight: bold;
+ 
 }
 
 .btn:hover {
   background: #666;
+ 
 }
 
 /* 
