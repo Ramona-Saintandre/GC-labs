@@ -13,7 +13,8 @@ export class TodoItemsComponent implements OnInit {
   ngOnInit() {
   }
 
-// setting dynamic class
+// setting dynamic class per Brad Traversy
+
 setClass() {
   let classes = {
     todo: true,
