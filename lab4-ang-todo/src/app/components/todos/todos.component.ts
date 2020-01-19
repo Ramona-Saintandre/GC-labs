@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Todo} from '../../services/todo.service'
 import {todo} from '../../models/todo'
 
 @Component({
@@ -13,7 +14,7 @@ export class TodosComponent implements OnInit {
 
 
   // moved array over to todos.service.ts 
-  
+
   ngOnInit() {
   //   this.todos = [
   //     {
