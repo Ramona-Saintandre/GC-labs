@@ -46,7 +46,22 @@ export class TodoService {
     },
     {
       id: 8,
-      title:'two inputs ',
+      title:'user can add items ',
+      completed:false
+    },
+    {
+      id: 9,
+      title:'user can filter list ',
+      completed:false
+    },
+    {
+      id: 10,
+      title:'user can remove items, by clicking the "x" ',    
+        completed:false
+    },
+    {
+      id: 11,
+      title:'user can mark items complete by clicking the "complete" button',
       completed:false
     }
   ]

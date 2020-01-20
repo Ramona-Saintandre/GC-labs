@@ -16,6 +16,7 @@ export class TodosComponent implements OnInit {
   // moved array over to todos.service.ts 
 
   ngOnInit() {
+    this.todos = this.TodoService.getTodos();
   //   this.todos = [
   //     {
   //     id: 1,
