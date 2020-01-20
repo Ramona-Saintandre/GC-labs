@@ -10,7 +10,7 @@ import { TodoService } from '../../services/todo.service'
 export class TodosComponent implements OnInit {
 
   todos:todo[];
-  constructor() { }
+  constructor(private TodoService:TodoService) { }
 
 
   // moved array over to todos.service.ts 
