@@ -13,3 +13,6 @@ per stack overflow:
 
 2 import {Todo} from '../../services/todo.service'
           ~~~~
+
+2. ./src/app/app.module.ts 22:12-28
+"export 'HttpClientModule' was not found in './app.component' 
