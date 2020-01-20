@@ -6,4 +6,10 @@ import Todo
 Module '"../../../../../../GC-labs/lab4-ang-todo/src/app/services/todo.service"' has no exported member 'Todo'.ts(2305)
 
 per stack overflow: 
- suggested deleting node_modules folder and running npm install seems to solve the issue. Solved mine atlist
+ suggested deleting node_modules folder and running npm install seems to solve the issue. Solved mine atlist 
+
+ unistalled and reinstalled node - tried to lauch the server got this error:
+ Module '"C:/projects/GC-labs/lab4-ang-todo/src/app/services/todo.service"' has no exported member 'Todo'.
+
+2 import {Todo} from '../../services/todo.service'
+          ~~~~
