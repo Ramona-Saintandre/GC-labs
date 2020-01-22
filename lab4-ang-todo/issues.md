@@ -27,3 +27,9 @@ Fixed the issue by also changing the casing on the this.todoService in the ngOnI
 
  resolved http import issue from the other day . 
  I was not importing from the @angular/components 
+
+ got a big mess when trying to setup the HTTP 
+ 
+ Type 'void' is not assignable to type 'todo[]'.ts(2322)
+ Expected 1-2 arguments, but got 0.ts(2554)
+http.d.ts(1087, 12): An argument for 'url' was not provided.
