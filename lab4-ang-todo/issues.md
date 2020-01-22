@@ -24,3 +24,6 @@ recieved this error message when I changed the capitalization on the on the cons
 Fixed the issue by also changing the casing on the this.todoService in the ngOnInit()
 
  ERROR in src/app/components/todos/todos.component.ts(19,23): error TS2551: Property 'TodoService' does not exist on type 'TodosComponent'. Did you mean 'todoService'?
+
+ resolved http import issue from the other day . 
+ I was not importing from the @angular/components 
