@@ -16,3 +16,6 @@ per stack overflow:
 
 2. ./src/app/app.module.ts 22:12-28
 "export 'HttpClientModule' was not found in './app.component' 
+
+1/22/2020
+
