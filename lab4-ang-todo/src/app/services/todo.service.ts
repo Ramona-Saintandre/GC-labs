@@ -64,6 +64,11 @@ export class TodoService {
       id: 11,
       title:'user can mark items complete by clicking the "complete" button',
       completed:false
+    },
+    {
+      id: 12,
+      title:'user can mark items complete by clicking the "complete" button',
+      completed:false
     }
   ]
   }

@@ -10,13 +10,13 @@ import { TodoService } from '../../services/todo.service'
 export class TodosComponent implements OnInit {
 
   todos:todo[];
-  constructor(private TodoService:TodoService) { }
+  constructor(private todoService:TodoService) { }
 
 
   // moved array over to todos.service.ts 
 
   ngOnInit() {
-    this.todos = this.TodoService.getTodos();
+    this.todos = this.todoService.getTodos();
   //   this.todos = [
   //     {
   //     id: 1,
