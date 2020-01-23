@@ -60,5 +60,8 @@ export class TodosComponent implements OnInit {
   //   }
   // ]
   }
+  deleteTodo(todo:Todo){
+    console.log('delete me')
 }
 
+}
