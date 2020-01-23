@@ -1,9 +1,9 @@
 <!-- use ngFor -->
 
 <app-todo-items 
-*ngFor="let todo of todos" 
+*ngFor="let todo of todos ; let i=index" 
 [todo]="todo"
-(deleteTodo)="deleteTodo($event)"
+(deleteTodo)="deleteTodo(i)"
 >
     <li>{{todo.title}}</li>
 </app-todo-items>
