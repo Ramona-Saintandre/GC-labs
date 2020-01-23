@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { TodosComponent } from './components/todos/todos.component';
 import { TodoItemsComponent } from './components/todo-items/todo-items.component';
 import { HeaderComponent } from './components/layout/header/header.component';
-
+import { FormsModule } from '@angular/forms'
 
 // this is the main point of angular, ngmodule is the root app module 
 @NgModule({
@@ -19,7 +19,8 @@ import { HeaderComponent } from './components/layout/header/header.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
     
   ],
   providers: [],

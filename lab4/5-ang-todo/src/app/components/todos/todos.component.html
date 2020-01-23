@@ -7,3 +7,6 @@
 >
     <li>{{todo.title}}</li>
 </app-todo-items>
+
+<input type="text" [(ngModel)]="title" placeholder="Add your ToDo's">
+<button (click)= "addTodo(title)" class="add">Add</button>
