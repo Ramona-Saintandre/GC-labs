@@ -5,7 +5,11 @@
       <div><h1>ToDo List</h1></div>
     </div>
   </div> 
-  <input class="filter type="text" placeholder="Filter all you have ToDo">
+<form id= "filter" action="">
+  <label for=""></label>
+  <input type="text"[(ngModel)]='filtersearch' placeholder="filter tasks">
+</form>
+  <!-- <input type="text" placeholder="Filter all you have ToDo"> -->
   <!-- <app-header></app-header> -->
    <app-todos>    
   </app-todos>
