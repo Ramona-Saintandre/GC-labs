@@ -1,4 +1,4 @@
-import { Component, OnInit , Input } from '@angular/core';
+import { Component, OnInit , Input , EventEmitter, Output} from '@angular/core';
 import {todo} from 'src/app/models/Todo';
 @Component({
   selector: 'app-todo-items',
@@ -9,6 +9,7 @@ export class TodoItemsComponent implements OnInit {
   @Input() todo:todo; 
   @Input() todos:todo;
   @Input() id:number;
+  @Output() deleteTodo: EventEmitter<todo> = new EventEmitter();
 
 
   constructor() { }
@@ -29,6 +30,7 @@ onToggle(todo){
  todo.completed = !todo.completed;
 }
 onDelete(todo){
-  console.log('delete')
+  this.deleteTodo.emit(todo);
+  // console.log('delete')
 }
 }
