@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "reddit-clone": {
+    "lab4-redditClone": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/reddit-clone",
+            "outputPath": "dist/lab4-redditClone",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "reddit-clone:build"
+            "browserTarget": "lab4-redditClone:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "reddit-clone:build:production"
+              "browserTarget": "lab4-redditClone:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "reddit-clone:build"
+            "browserTarget": "lab4-redditClone:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "reddit-clone:serve"
+            "devServerTarget": "lab4-redditClone:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "reddit-clone:serve:production"
+              "devServerTarget": "lab4-redditClone:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "reddit-clone"
+  "defaultProject": "lab4-redditClone"
 }
