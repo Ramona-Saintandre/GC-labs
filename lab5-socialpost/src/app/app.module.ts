@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SocialpostComponent } from './socialpost/socialpost.component';
 import { PostComponent } from './post/post.component';
+import { PostFormComponent } from './post-form/post-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SocialpostComponent,
-    PostComponent
+    PostComponent,
+    PostFormComponent
   ],
   imports: [
     BrowserModule,
