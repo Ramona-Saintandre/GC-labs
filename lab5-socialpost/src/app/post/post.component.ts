@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-
+export interface IPost {
+  title : string;
+  thought : string;
+}
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',
