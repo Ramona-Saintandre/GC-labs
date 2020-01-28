@@ -6,15 +6,14 @@
     -------------------------------------------------------
      remember what chris said about naming convention and capitialization
  -->
-<div class="container">
-    <h2>Add A Post</h2>
-    <h3 class="text">Title</h3>
-    <input type="text" class="text" name="title" [(ngModel)]=
-    "getTitle">
-        <h3 class="text"></h3>
-        
-        <input type="text" class="text" name="thought" [(ngModel)]=
-    "getThought">
-        <button (click)="submitPost(getTitle,getThought)">Add Post</button>
+<div class="postcontainer">
+<!-- need to make this into a container -->
+  <h3>Add A Post</h3>
+  <input type="text" class="text" name="title" [(ngModel)]="getTitle">
+<!-- need to make this into a container -->
+  <h3 class="text">Title</h3>
+  <input type="text" class="text" name="thought" [(ngModel)]="getThought">
+  <!-- need to make this into a container? -->
+  <button class="submitpostbtn" (click)="submitPost(getTitle,getThought)">Add Post</button>
 </div>
-<p> post forms it works</p>
+
