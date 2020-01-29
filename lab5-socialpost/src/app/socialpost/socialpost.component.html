@@ -16,5 +16,18 @@ has a onDelete method that responds to the delete method
  
 <button class="thoughtbtn" (click)="showPostForm">New Thought</button>
 
+<app-post-form>
+    <!-- need the onSubmit here -->
+</app-post-form>
 
-<app-post></app-post>
+<div class="postbox">
+    <!-- 
+    ngFor  is needed here 
+    post.title
+    post.thought 
+    trash can with deletePost method needed 
+    need to figure out how to do font-awesome in angular
+    <button type ="button" class="fas fa-trash" (click)="deletePost"</button>
+ -->
+ <app-post></app-post>
+</div>
