@@ -17,5 +17,9 @@ post : IPost;
 
   ngOnInit() {
   }
+  // need deletion 
+  deletedPost(){
+    this.deletedPost.emit();
+  }
 
 }
