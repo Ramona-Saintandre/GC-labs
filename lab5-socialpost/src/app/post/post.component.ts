@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, Output, Eventemitter } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-post',
