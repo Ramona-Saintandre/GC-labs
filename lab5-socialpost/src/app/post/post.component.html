@@ -4,7 +4,7 @@
     it has one output binding called deleted that emits an event 
     it has  deletePost method that triggers the deleted event emitter 
     ----------------------------------------------------------------------
-    need deleete Post here with a trashcan. need to figure out where to link font-awesome
+    need delete Post here with a trashcan. need to figure out where to link font-awesome
     remember what chris said about naming convention and capitialization 
   -->
    <div class="post-container"> 
@@ -12,7 +12,15 @@
           <div class="post-title">Post</div>
       </div>
       <div class="post-thoughtbox">
-          
+       
+          <!-- 
+          ngFor  is needed here 
+          post.title
+          post.thought 
+          trash can with deletePost method needed 
+          <button type ="button" class="fas fa-trash" (click)="deletePost"</button>
+       -->
+    
       </div>
   </div> 
 <app-post-form></app-post-form>
