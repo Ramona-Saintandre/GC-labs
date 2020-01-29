@@ -1,4 +1,5 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit , EventEmitter, Output, Input} from '@angular/core';
+import { IPost } from '../interface/post/Ipost';
 
 @Component({
   selector: 'app-post',
@@ -6,6 +7,11 @@ import { Component, OnInit} from '@angular/core';
   styleUrls: ['./post.component.css']
 })
 export class PostComponent implements OnInit {
+// https://www.codementor.io/@yomateo/angular7-101-input-output-os4et83m5
+
+// hope this is  the right place for the interface
+@Input()
+post : IPost;
 
   constructor() { }
 
