@@ -12,14 +12,19 @@ export class PostComponent implements OnInit {
 // hope this is  the right place for the interface
 @Input()
 post : IPost;
+posts = [];
 
   constructor() { }
 
   ngOnInit() {
+    this.posts=[{
+      title:"this is the best",
+      thoughts:"this has been a challenge"
+    }]
   }
   // need deletion 
-  deletedPost(){
-    this.deletedPost.emit();
-  }
+  // deletedPost(){
+  //   this.deletedPost.emit();
+  // }
 
 }
