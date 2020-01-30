@@ -20,7 +20,16 @@ posts = [];
     this.posts=[{
       title:"this is the best",
       thoughts:"this has been a challenge"
-    }]
+    },
+    {
+      title:"Roger is awesome",
+      thoughts:"helping me not go crazy"
+    },
+    {
+      title:"need to style",
+      thoughts:"this looks funky"
+    }
+  ]
   }
   // need deletion 
   // deletedPost(){

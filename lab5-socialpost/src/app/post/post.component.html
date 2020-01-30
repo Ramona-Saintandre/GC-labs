@@ -8,17 +8,17 @@
     remember what chris said about naming convention and capitialization 
   -->
    <div class="post-container"> 
-      <div class="post-content">
-          
-      </div>
-      <ul>
-          <li class="title-text">{{title}}</li>
-          <li class="thought-text">{{thought}} This lab has been a challenge</li>
-      </ul>
+           
       <!-- list of thoughts output from post-form -->
 
-      <div class="post-thoughtoutbox">
-          <button type ="button" class="fas fa-trash" (click)="deletePost" ></button>
+      <div class="thoughtoutbox" *ngFor = "let post of posts; let i =index;">
+        
+        <div>
+            <p>{{post.title}}</p>
+            <p>{{post.thoughts}}</p>
+            <button type ="button" class="fas fa-trash" (click)="deletePost" ></button>
+        </div>
+          
     
           <!-- 
           ngFor  is needed here 

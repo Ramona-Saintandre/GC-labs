@@ -3,7 +3,7 @@
     width: 50%;
     height: 50vh;
     border:1px solid black;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
@@ -20,7 +20,11 @@
   li{
       text-decoration: none;
   }
-  
+  .thoughtoutbox{
+      display: flex;
+      flex-direction: row;
+  }
+
   .thoughtbtn {
       display: flex;
     background-color: rgb(3, 169, 244);
@@ -30,6 +34,9 @@
     justify-content: center;
     align-items: center;
     width: 50%;
+  }
+  p{
+      flex:7;
   }
   
   /* button {
